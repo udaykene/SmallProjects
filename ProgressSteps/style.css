@@ -115,38 +115,3 @@ body {
   }
 }
 
-label,
-button,
-select,
-summary,
-[type="radio"],
-[type="submit"],
-[type="checkbox"] {
-  cursor: pointer;
-}
-article ol,
-article ul {
-  list-style-position: inside;
-}
-a {
-  color: #337ab7;
-  text-decoration: none;
-  text-underline-position: under;
-  text-decoration-thickness: 0.16rem;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.col {
-  flex-basis: 0;
-  flex-grow: 1;
-  margin: 10px;
-}
-.hidden {
-  display: none;
-}
-.visible {
-  display: block;
-}
