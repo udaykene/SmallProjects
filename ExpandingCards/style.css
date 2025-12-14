@@ -1,0 +1,92 @@
+/* FOR DESKTOP FIRST PERSPECTIVE (1440px) */
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  width: 90vw;
+  display: flex;
+}
+.panel {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+  flex: 0.5;
+  height: 80vh;
+  margin: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.panel.active {
+  flex: 5;
+  transition: flex 0.5s ease-in-out;
+}
+.panel h3 {
+  position: absolute;
+  left: 4%;
+  bottom: 4%;
+  font-size: 1.4rem;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  opacity: 0;
+}
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+/* FOR DESKTOPS */
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+/* FOR TABLETS */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+/* FOR MOBILES */
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+    padding: 0 5px;
+  }
+  .panel{
+    margin: 5px;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+/* FOR MOBILES */
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
