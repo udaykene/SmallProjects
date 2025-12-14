@@ -79,14 +79,3 @@ body {
     display: none;
   }
 }
-
-/* FOR MOBILES */
-@media screen and (max-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
-    display: none;
-  }
-}
